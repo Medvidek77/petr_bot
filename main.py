@@ -10,7 +10,6 @@ async def on_ready():
 
 @bot.event
 async def on_member_remove(member):
-    await asyncio.sleep(5)
     try:
         user = bot.get_user(member.id)
         await user.send("Hello there!")
