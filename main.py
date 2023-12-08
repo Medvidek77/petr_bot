@@ -9,10 +9,10 @@ async def on_ready():
     print("Bot is ready")
 
 @bot.event
-async def on_message(message):
+async def on_member_remove(member):
     
     try:
-        user = bot.get_user(message.author.id)
+        user = bot.get_user(member)
         await asyncio.sleep(500)
         await user.send("Hello there!")
     except Exception as e:
