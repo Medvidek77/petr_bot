@@ -16,4 +16,4 @@ async def on_member_remove(member):
     except Exception as e:
         print(e)
 
-bot.run("MTE4MDgxODE5ODY1Njk4NzE2Ng.G7GCxO.l_wsKH8Zhj5qD3QaZgAHDcPTFjwQv2yx0p9-Ks")
+bot.run("MTE4MjczMzE1MTAxODE2MDI4OA.GxoicZ.cDvtz4hV8OwuHiG1uvuHzZK2oym86JsauNLn8I")
