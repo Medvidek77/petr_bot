@@ -10,7 +10,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(member):
-    if member.id == 973567020903858186
+    if member.id == 973567020903858186:
         try:
             user = bot.get_user(member.id)
             await user.send("Hello there!")
