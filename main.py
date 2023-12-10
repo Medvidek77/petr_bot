@@ -18,23 +18,23 @@ async def on_member_remove(member):
     """
 
     text2 = """
-    Ahoj! :wave:\n\n
+Ahoj! :wave:\n\n
 
-    Doufám, že se máš fajn! Všiml jsem si, že ses nedávno stal/a součástí naší Discord skupiny. :blush:\n\n
+Doufám, že se máš fajn! Všiml jsem si, že ses nedávno stal/a součástí naší Discord skupiny. :blush:\n\n
 
-    Chtěl bych se s tebou podělit o něco, co by tě mohlo zajímat. Součástí této skupiny je obsáhlý kurz zaměřený na technickou analýzu, strukturu trhu, používání Fibonacci, Exocharts a další klíčové strategie. :bar_chart: Pokud se ti náš Discord líbí a chceš se do tradingu ponořit hlouběji, tak koupě kurzu je přesně pro tebe! Získáš nejenom samotný kurz, ale i přístup do zdejších kanálů, jako je ‘jan_channel’, kde najdeš set ups, analýzy a přehledy na trhu.\n\n
+Chtěl bych se s tebou podělit o něco, co by tě mohlo zajímat. Součástí této skupiny je obsáhlý kurz zaměřený na technickou analýzu, strukturu trhu, používání Fibonacci, Exocharts a další klíčové strategie. :bar_chart: Pokud se ti náš Discord líbí a chceš se do tradingu ponořit hlouběji, tak koupě kurzu je přesně pro tebe! Získáš nejenom samotný kurz, ale i přístup do zdejších kanálů, jako je ‘jan_channel’, kde najdeš set ups, analýzy a přehledy na trhu.\n\n
 
-    Myslím, že tento kurz společně s naší Discord skupinou by mohly být přesně to, co hledáš! :star2:\n\n
+Myslím, že tento kurz společně s naší Discord skupinou by mohly být přesně to, co hledáš! :star2:\n\n
 
-    Chceš se dozvědět více? Podívej se na naše stránky:
-    CW-Trading: [https://cw-trading.cz/](https://cw-trading.cz/)
-    Crypto Wizards: [https://crypto-wizards.net/](https://crypto-wizards.net/)\n\n
+Chceš se dozvědět více? Podívej se na naše stránky:
+CW-Trading: [https://cw-trading.cz/](https://cw-trading.cz/)
+Crypto Wizards: [https://crypto-wizards.net/](https://crypto-wizards.net/)\n\n
 
-    Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:\n\n
+Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:\n\n
 
-    Budeme rádi za tvé názory a zpětnou vazbu.\n\n
+Budeme rádi za tvé názory a zpětnou vazbu.\n\n
 
-    Těším se na brzkou odpověď!
+Těším se na brzkou odpověď!
     """
 
     
