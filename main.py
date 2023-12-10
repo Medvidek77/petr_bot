@@ -12,7 +12,7 @@ async def on_ready():
 @bot.event
 async def on_member_remove(member):
 
-    text = f"""
+    text1 = f"""
     Hi there {member.mention}! :wave:﻿﻿
     ﻿
     I hope you're doing great! I've noticed you recently joined our Discord group.:blush:﻿﻿
@@ -28,7 +28,9 @@ async def on_member_remove(member):
     Feel free to reach out to CW_Admin in DMs if you have any questions. :raised_hands:﻿﻿
     ﻿
     Looking forward to hearing from you soon!
-    ﻿
+    """
+
+    text2 = """﻿
     ﻿
     Ahoj! :wave:﻿﻿
     ﻿
@@ -46,12 +48,12 @@ async def on_member_remove(member):
     ﻿
     Budeme rádi za tvé názory a zpětnou vazbu.
     ﻿
-    Těším se na brzkou odpověď!
-    """
+    Těším se na brzkou odpověď!"""
     
     try:
         await asyncio.sleep(10)
-        await member.send(text)
+        await member.send(text1)
+        await member.send(text2)
     except Exception as e:
         print(e)
 
