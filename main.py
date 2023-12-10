@@ -51,7 +51,7 @@ async def on_member_remove(member):
     
     try:
         user = bot.get_user(member)
-        await asyncio.sleep(500)
+        await asyncio.sleep(10)
         await user.send(text)
     except Exception as e:
         print(e)
