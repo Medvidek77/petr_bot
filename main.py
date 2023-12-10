@@ -13,8 +13,8 @@ async def on_ready():
 async def on_member_remove(member):
 
     text1 = f"""
-    Hi there {member.mention}! :wave:﻿﻿
-    ﻿
+    Hi there {member.mention}! :wave:\n
+
     I hope you're doing great! I've noticed you recently joined our Discord group.:blush:﻿﻿
     ﻿
     I'm reaching out to share something exciting with you about our course. It dives deep into key areas like technical analysis, market structure, Fibonacci retracement, and Exocharts.:bar_chart:﻿ This course is made to boost your trading skills with practical knowledge. Plus, purchasing it grants you exclusive access to coaches' channels, including Jan's expert setups and insights, along with channels dedicated to our wizard strategy.
