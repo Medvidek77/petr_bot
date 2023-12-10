@@ -50,9 +50,8 @@ async def on_member_remove(member):
     """
     
     try:
-        user = bot.get_user(member)
         await asyncio.sleep(10)
-        await user.send(text)
+        await member.send(text)
     except Exception as e:
         print(e)
 
