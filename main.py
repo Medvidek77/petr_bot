@@ -7,10 +7,10 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
 @bot.event
 async def on_ready():
-    print("Bot is ready")
+    print(f"{bot.name} is ready")
 
 @bot.event
-async def on_member_remove(member):
+async def on_member_join(member):
 
     text1 = f"""
 Hi there {member.mention}! 👋
