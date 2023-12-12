@@ -42,8 +42,8 @@ Chtěl bych se s tebou podělit o něco, co by tě mohlo zajímat. Součástí t
 Myslím, že tento kurz společně s naší Discord skupinou by mohly být přesně to, co hledáš! :star2:
 
 Chceš se dozvědět více? Podívej se na naše stránky:
-* CW-Trading: [https://cw-trading.cz/](https://cw-trading.cz/)
-* Crypto Wizards: [https://crypto-wizards.net/](https://crypto-wizards.net/)
+* CW-Trading: https://cw-trading.cz/
+* Crypto Wizards: https://crypto-wizards.net/
 
 Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:
 
@@ -51,7 +51,7 @@ Budeme rádi za tvé názory a zpětnou vazbu.
 
 Těším se na brzkou odpověď!
     """
-    embed = discord.Embed(title="Welcome to Crypto Wizards", description=f":flag_gb:\n{text1}\n\n:flag_cz:\n{text2}",color=0x00ff00)
+    embed = discord.Embed(title="# Welcome to Crypto Wizards", description=f":flag_gb:\n{text1}\n\n:flag_cz:\n{text2}",color=0x00ff00)
     #embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133215192092734/LOGO_youtube_2.png?ex=658adcfe&is=657867fe&hm=973d9acf2f4d4c8e51abcebd2cfdb0560e3bf40a33ba1b965ca46566bc9e2916&")
     embed.set_image(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
