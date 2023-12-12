@@ -42,8 +42,8 @@ Chtěl bych se s tebou podělit o něco, co by tě mohlo zajímat. Součástí t
 Myslím, že tento kurz společně s naší Discord skupinou by mohly být přesně to, co hledáš! :star2:
 
 Chceš se dozvědět více? Podívej se na naše stránky:
-* CW-Trading: https://cw-trading.cz/
-* Crypto Wizards: https://crypto-wizards.net/
+* CW-Trading: [cw trading](https://cw-trading.cz/)
+* Crypto Wizards: [crypto wizards](https://crypto-wizards.net/)
 
 Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:
 
