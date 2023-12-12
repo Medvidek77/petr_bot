@@ -30,8 +30,8 @@ Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
 Looking forward to hearing from you soon!
     """
 
-    text2 = """
-Ahoj! :wave:\n\n
+    text2 = f"""
+Ahoj {member.mention}! :wave:\n\n
 
 Doufám, že se máš fajn! Všiml jsem si, že ses nedávno stal/a součástí naší Discord skupiny. :blush:
 
@@ -49,14 +49,17 @@ Budeme rádi za tvé názory a zpětnou vazbu.
 
 Těším se na brzkou odpověď!
     """
-
+    embed = discord.Embed(title="Welcome to Crypto Wizards",color=0x00ff00)
+    embed.add_field(name=":flag_gb:",value=text1, inline=False)
+    embed.add_field(name=":flag_cz:",value=text2, inline=False)
+    embed.set_thumbnail("https://cdn.discordapp.com/attachments/1180556010465800225/1184133215192092734/LOGO_youtube_2.png?ex=658adcfe&is=657867fe&hm=973d9acf2f4d4c8e51abcebd2cfdb0560e3bf40a33ba1b965ca46566bc9e2916&")
+    embed.set_image("https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
     try:
-        await asyncio.sleep(259200)
-        await member.send(text1)
-        await member.send(text2)
+        await asyncio.sleep(1)
+        await member.send(embed=embed)
     except Exception as e:
-        print(e)
+        print(f"Error: {e}")
 
 
 
