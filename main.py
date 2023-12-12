@@ -29,7 +29,7 @@ Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
 
 Looking forward to hearing from you soon!
 
-**---------------------------------------------------**
+**------------------------------------------------------------------**
     """
 
     text2 = f"""
