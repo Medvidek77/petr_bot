@@ -22,7 +22,6 @@ I'm reaching out to share something exciting with you about our course. It dives
 I believe this course, along with our dedicated Discord group, could be the perfect fit for you! 🌟
 
 Interested in learning more? Check out the details here:
-* CW-Trading: [cw trading](https://cw-trading.cz/)
 * Crypto Wizards: [crypto wizards](https://crypto-wizards.net/)
 
 Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
@@ -43,7 +42,6 @@ Myslím, že tento kurz společně s naší Discord skupinou by mohly být přes
 
 Chceš se dozvědět více? Podívej se na naše stránky:
 * CW-Trading: [cw trading](https://cw-trading.cz/)
-* Crypto Wizards: [crypto wizards](https://crypto-wizards.net/)
 
 Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:
 
