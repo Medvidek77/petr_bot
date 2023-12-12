@@ -49,7 +49,7 @@ Budeme rádi za tvé názory a zpětnou vazbu.
 
 Těším se na brzkou odpověď!
     """
-    embed = discord.Embed(title="Welcome to Crypto Wizards",color=0x00ff00)
+    embed = discord.Embed(title="Welcome to Crypto Wizards", description=f"{text1}\n\n{text2}",color=0x00ff00)
     embed.add_field(name=":flag_gb:",value=text1, inline=False)
     embed.add_field(name=":flag_cz:",value=text2, inline=False)
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133215192092734/LOGO_youtube_2.png?ex=658adcfe&is=657867fe&hm=973d9acf2f4d4c8e51abcebd2cfdb0560e3bf40a33ba1b965ca46566bc9e2916&")
