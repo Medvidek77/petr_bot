@@ -28,10 +28,12 @@ Interested in learning more? Check out the details here:
 Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
 
 Looking forward to hearing from you soon!
+
+-------------------------------------------
     """
 
     text2 = f"""
-Ahoj {member.mention}! :wave:\n\n
+Ahoj {member.mention}! :wave:
 
 Doufám, že se máš fajn! Všiml jsem si, že ses nedávno stal/a součástí naší Discord skupiny. :blush:
 
