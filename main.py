@@ -29,7 +29,7 @@ Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
 
 Looking forward to hearing from you soon!
 
--------------------------------------------
+**---------------------------------------------------**
     """
 
     text2 = f"""
@@ -52,7 +52,7 @@ Budeme rádi za tvé názory a zpětnou vazbu.
 Těším se na brzkou odpověď!
     """
     embed = discord.Embed(title="Welcome to Crypto Wizards", description=f":flag_gb:\n{text1}\n\n:flag_cz:\n{text2}",color=0x00ff00)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133215192092734/LOGO_youtube_2.png?ex=658adcfe&is=657867fe&hm=973d9acf2f4d4c8e51abcebd2cfdb0560e3bf40a33ba1b965ca46566bc9e2916&")
+    #embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133215192092734/LOGO_youtube_2.png?ex=658adcfe&is=657867fe&hm=973d9acf2f4d4c8e51abcebd2cfdb0560e3bf40a33ba1b965ca46566bc9e2916&")
     embed.set_image(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
     try:
