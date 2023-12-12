@@ -52,7 +52,7 @@ Těším se na brzkou odpověď!
 
     
     try:
-        await asyncio.sleep(10)
+        await asyncio.sleep(259200)
         await member.send(text1)
         await member.send(text2)
     except Exception as e:
