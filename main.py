@@ -86,7 +86,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
         print(f"Error: {e}")
 
 
-@bot.slash_command(name="send_dm", description="Command sends custom DM to user")
+@bot.command()
 async def dm(ctx, member: discord.Member, text: str):
     try:
         await member.send(text)
