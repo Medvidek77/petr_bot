@@ -86,12 +86,16 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
         print(f"Error: {e}")
 
 
-@bot.command()
-async def dm(ctx, member: discord.Member, text: str):
-    try:
-        await member.send(text)
-    except Exception as e:
-        print(f"Error: {e}")
+@bot.event
+async def on_message(ctx, member: discord.Member, text: str):
+    if ctx.author.bot:
+        return
+    elif ctx.content.startswith("!send_dm"):
+
+        try:
+            await member.send(text)
+        except Exception as e:
+            print(f"Error: {e}")
 
 
 
