@@ -87,12 +87,16 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 
 
 @bot.event
-async def on_message(ctx, member: discord.Member, text: str):
+async def on_message(ctx):
     if ctx.author.bot:
         return
     elif ctx.content.startswith("!send_dm"):
 
+        text = ctx.content.split("!send_dm ")[1]
+        selected_member = ctx.content.split("!send_dm ")[2]
+
         try:
+            member = discord.utils.get(ctx.guild.members, name=selected_member)
             await member.send(text)
         except Exception as e:
             print(f"Error: {e}")
