@@ -30,28 +30,35 @@ Looking forward to hearing from you soon!
     """
 
     text2 = f"""
-Ahoj {member.mention}! :wave:
+Ahoj @name! :wave:
 
-Doufám, že se máš fajn! Všiml jsem si, že ses nedávno stal/a součástí naší Discord skupiny. :blush:
+Všiml jsem si, že jsi se nedávno připojil k naší CW Trading skupině. Doufám, že je pro tebe přínosná.:bar_chart:Protože se nacházíš jen v bezplatné verzi, informace a edukace jsou velice omezené. Členové, kteří si zakoupí členství mají přístup k prémiovým Discord kanálům, kam @CW_Jan a další mentoři denně posílají analýzy a to, co budou každý den obchodovat.:boom:Nezbytnou součástí profitabilního tradera jsou znalosti, které poskytujeme v našem online kurzu, ve kterém se naučíš ovládat:
 
-Chtěl bych se s tebou podělit o něco, co by tě mohlo zajímat. Součástí této skupiny je obsáhlý kurz zaměřený na technickou analýzu, strukturu trhu, používání Fibonacci, Exocharts a další klíčové strategie. :bar_chart: Pokud se ti náš Discord líbí a chceš se do tradingu ponořit hlouběji, tak koupě kurzu je přesně pro tebe! Získáš nejenom samotný kurz, ale i přístup do zdejších kanálů, jako je ‘jan_channel’, kde najdeš set ups, analýzy a přehledy na trhu.
+> * Fibonacci
+> * Exocharts
+> * Market Structure
+> * Footprints
+> * Volume
+> * Risk Management
+> * a další…
 
-Myslím, že tento kurz společně s naší Discord skupinou by mohly být přesně to, co hledáš! :star2:
+Součástí členství je: :white_tick:
 
-Chceš se dozvědět více? Podívej se na naše stránky:
-* CW-Trading: [cw trading](https://cw-trading.cz/)
+* Exocharts Pro licence v hodnotě 2500 ,- Kč
+* Denní analýzy CW týmu
+* Přes 50 lekcí strategií CW Jana
 
-Kdybys měl/a jakékoliv dotazy, piš CW_Admin do soukromých zpráv. :raised_hands:
+Pojďme uzavřít jeden trade: :thinking:
+Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při objednávce na této stránce: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators) můžeš navštívit naše stránky: :point_down:
 
-Budeme rádi za tvé názory a zpětnou vazbu.
-
-Těším se na brzkou odpověď!
+* CW-Trading: https://cw-trading.cz/
+* Crypto Wizards: https://crypto-wizards.net/
     """
-    embed = discord.Embed(title="**Welcome to Crypto Wizards**", description=f":## flag_gb:\n{text1}\n:## flag_cz:\n{text2}",color=0x6851ac)
+    embed = discord.Embed(description=f":## flag_gb:\n{text1}\n:## flag_cz:\n{text2}",color=0x6851ac)
     embed.set_image(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
     try:
-        await asyncio.sleep(259200)
+        await asyncio.sleep(1)
         await member.send(embed=embed)
     except Exception as e:
         print(f"Error: {e}")
