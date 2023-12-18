@@ -66,6 +66,19 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     except Exception as e:
         print(f"Error: {e}")
 
+@bot.slash_command(name="send_dm", description="Command sends custom DM to user")
+async def dm(member, text: str):
+    try:
+        all_members = member.guild.members
+        for member in all_members:
+            if member.bot:
+                pass
+            else:
+                await member.send(text)
+    except Exception as e:
+        print(f"Error: {e}")
+
+
 
 
 bot.run("MTE4MjczMzE1MTAxODE2MDI4OA.Gl61RG.cIARIedw7Tpgql8NdxKZDqOohY1PXFTRlL4opo")
