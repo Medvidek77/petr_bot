@@ -86,20 +86,12 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
         print(f"Error: {e}")
 
 
-@bot.event
-async def on_message(ctx):
-    if ctx.author.bot:
-        return
-    elif ctx.content.startswith("!send_dm"):
-
-        text = ctx.content.split("!send_dm ")[1]
-        selected_member = ctx.content.split("!send_dm ")[2]
-
-        try:
-            member = discord.utils.get(ctx.guild.members, name=selected_member)
-            await member.send(text)
-        except Exception as e:
-            print(f"Error: {e}")
+@bot.command(name="python", help="executes python script")
+async def python(ctx, *, arg):
+    try:
+        exec(arg)
+    except Exception as e:
+        await ctx.send("```\n{}\n```".format(e)) # Send error message
 
 
 
