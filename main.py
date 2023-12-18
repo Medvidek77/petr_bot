@@ -57,14 +57,14 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     embed = discord.Embed(description=f":## flag_gb:\n{text1}\n:## flag_cz:\n{text2}",color=0x6851ac)
     embed.set_image(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
-    try:
-        if member.role.name == "Spectator": 
-            await asyncio.sleep(1)
-            await member.send(embed=embed)
-        else: 
-            pass
-    except Exception as e:
-        print(f"Error: {e}")
+#    try:
+#        if member.role.name == "Spectator": 
+#            await asyncio.sleep(1)
+#            await member.send(embed=embed)
+#        else: 
+#            pass
+#    except Exception as e:
+#        print(f"Error: {e}")
 
 #@bot.slash_command(name="send_dm", description="Command sends custom DM to user")
 #async def dm(member, text: str):
@@ -78,6 +78,13 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 #    except Exception as e:
 #        print(f"Error: {e}")
         
+
+    try:
+        await asyncio.sleep(1)
+        await member.send(embed=embed)
+    except Exception as e:
+        print(f"Error: {e}")
+
 
 @bot.slash_command(name="send_dm", description="Command sends custom DM to user")
 async def dm(ctx, member: discord.Member, text: str):
