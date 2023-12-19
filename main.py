@@ -97,6 +97,7 @@ async def on_message(message):
             async def button_callback(self, button, interaction):
                 await interaction.response.send_message("You clicked the button!") # Send a message when the button is clicked
         await message.delete()
+        await message.channel.send(f"Verify your message before send!\n\n**Text:**\n\n{text}", view=MyView())
         await message.channel.send("Sending DMs to all members")
         all_members = message.guild.members
         for member in all_members:
