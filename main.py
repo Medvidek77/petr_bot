@@ -92,6 +92,7 @@ async def on_message(message):
         return
     elif message.content.startswith("!senddm "):
         text = message.content.split("!senddm ", 1)[1]
+        await message.delete()
 
         class MyView(discord.ui.View): 
             @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
