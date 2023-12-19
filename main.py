@@ -96,7 +96,7 @@ async def on_message(message):
         class MyView(discord.ui.View): 
             @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
             async def send_button(self, button, interaction):
-                await message.respond("Sending DMs to all members")
+                await interaction.response.send_message("Sending DMs to all members")
                 all_members = message.guild.members
                 for member in all_members:
                     if member.bot:
@@ -106,11 +106,11 @@ async def on_message(message):
 
             @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎")
             async def cancel_button(self, button, interaction):
-                await message.delete()
-                await message.respond("Canceled")
+                await interaction.message.delete()
+                await interaction.response.send_message("Canceled")
 
-        await message.delete()
         await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
+
 
                 
     
