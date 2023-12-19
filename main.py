@@ -98,7 +98,7 @@ async def on_message(message):
             async def send_button(self, button, interaction):
                 button.disabled = True
                 await interaction.message.delete()
-                await interaction.response.send_message("Sending DMs to all members")
+                await interaction.send.send_message("Sending DMs to all members")
                 all_members = message.guild.members
                 for member in all_members:
                     if member.bot:
