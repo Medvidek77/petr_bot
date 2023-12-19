@@ -97,8 +97,10 @@ async def on_message(message):
             @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
             async def send_button(self, button, interaction):
                 button.disabled = True
-                await interaction.message.delete()
+                await message.delete()
                 await interaction.send.send_message("Sending DMs to all members")
+                await asyncio.sleep(3)
+                await interaction.message.delete()
                 all_members = message.guild.members
                 for member in all_members:
                     if member.bot:
