@@ -96,7 +96,7 @@ async def on_message(message):
         class MyView(discord.ui.View): 
             @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
             async def send_button(self, button, interaction):
-                await message.channel.respond("Sending DMs to all members")
+                await message.respond("Sending DMs to all members")
                 all_members = message.guild.members
                 for member in all_members:
                     if member.bot:
