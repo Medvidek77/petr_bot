@@ -86,12 +86,20 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
         print(f"Error: {e}")
 
 
-@bot.command(name="python", help="executes python script")
-async def python(ctx, *, arg):
-    try:
-        exec(arg)
-    except Exception as e:
-        await ctx.send("```\n{}\n```".format(e)) # Send error message
+@bot.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    elif message.content == "senddm":
+        text = message.content.split("senddm ", 1)[1]
+        await message.delete()
+        await message.channel.send("Sending DMs to all members")
+        all_members = message.guild.members
+        for member in all_members:
+            if member.bot:
+                pass
+            else:
+                await member.send(text)
 
 
 
