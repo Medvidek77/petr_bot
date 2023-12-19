@@ -95,7 +95,7 @@ async def on_message(message):
         await message.delete()
 
         class MyView(discord.ui.View): 
-            @discord.ui.button(label="Send", style=discord.ButtonStyle.success, emoji="😎")
+            @discord.ui.button(label="Send", style=discord.ButtonStyle.success)
             async def send_button(self, button, interaction):
                 button.disabled = True
                 await message.channel.send("Sending DMs to all members")
@@ -108,7 +108,7 @@ async def on_message(message):
                     else:
                         await member.send(text)
 
-            @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎")
+            @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger)
             async def cancel_button(self, button, interaction):
                 button.disabled = True
                 await message.chennel.send("Canceled")
