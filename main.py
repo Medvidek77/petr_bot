@@ -92,23 +92,28 @@ async def on_message(message):
         return
     elif message.content.startswith("!senddm "):
         text = message.content.split("!senddm ", 1)[1]
-        class MyView(discord.ui.View): # Create a class called MyView that subclasses discord.ui.View
-            @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎") # Create a button with the label "😎 Click me!" with color Blurple
-            @discord.ui.button2(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎") # Create a button with the label "👎 Click me!" with color Red
-            async def button_callback(self, button, button2, interaction):
-                if button.callback is self.button_callback:
-                    await message.delete()
-                    await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
-                    await message.channel.send("Sending DMs to all members")
-                    all_members = message.guild.members
-                    for member in all_members:
-                        if member.bot:
-                            pass
-                        else:
-                            await member.send(text)
-                elif button2.callback is self.button_callback:
-                    await message.delete()
-                    await message.channel.send("Canceled")
+
+        class MyView(discord.ui.View): 
+            @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
+            async def send_button(self, button, interaction):
+                await message.channel.send("Sending DMs to all members")
+                all_members = message.guild.members
+                for member in all_members:
+                    if member.bot:
+                        pass
+                    else:
+                        await member.send(text)
+
+            @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎")
+            async def cancel_button(self, button, interaction):
+                await message.delete()
+                await message.channel.send("Canceled")
+
+        await message.delete()
+        await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
+
+                
+    
 
 
 
