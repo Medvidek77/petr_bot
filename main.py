@@ -90,7 +90,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 async def on_message(message):
     if message.author.bot:
         return
-    elif message.content == "senddm":
+    elif message.content.startswith("senddm "):
         text = message.content.split("senddm ", 1)[1]
         await message.delete()
         await message.channel.send("Sending DMs to all members")
