@@ -95,7 +95,7 @@ async def on_message(message):
         await message.delete()
 
         class MyView(discord.ui.View): 
-            @discord.ui.button(label="Send", style=discord.ButtonStyle.primary, emoji="😎")
+            @discord.ui.button(label="Send", style=discord.ButtonStyle.success, emoji="😎")
             async def send_button(self, button, interaction):
                 button.disabled = True
                 await message.channel.send("Sending DMs to all members")
