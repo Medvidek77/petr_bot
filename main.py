@@ -114,6 +114,7 @@ async def on_message(message):
                 await message.channel.send("Canceled")
                 await asyncio.sleep(2)
                 await interaction.message.delete()
+                await message.delete()
 
         await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
 
