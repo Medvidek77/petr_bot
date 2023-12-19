@@ -111,8 +111,9 @@ async def on_message(message):
             @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎")
             async def cancel_button(self, button, interaction):
                 button.disabled = True
-                await interaction.message.delete()
-                await interaction.response.send_message("Canceled")
+                await message.chennel.send("Canceled")
+                await asyncio.sleep(2)
+                await message.delete()
 
         await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
 
