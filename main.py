@@ -90,7 +90,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 async def on_message(message):
     if message.author.bot:
         return
-    elif message.content.startswith("senddm "):
+    elif message.content.startswith("!senddm "):
         text = message.content.split("!senddm ", 1)[1]
         class MyView(discord.ui.View): # Create a class called MyView that subclasses discord.ui.View
             @discord.ui.button(label="Click me!", style=discord.ButtonStyle.primary, emoji="😎") # Create a button with the label "😎 Click me!" with color Blurple
