@@ -99,7 +99,7 @@ async def on_message(message):
             async def send_button(self, button, interaction):
                 button.disabled = True
                 await message.channel.send("Sending DMs to all members")
-                await asyncio.sleep(3)
+                await asyncio.sleep(2)
                 await interaction.message.delete()
                 all_members = message.guild.members
                 for member in all_members:
@@ -110,6 +110,7 @@ async def on_message(message):
 
             @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger, emoji="👎")
             async def cancel_button(self, button, interaction):
+                button.disabled = True
                 await interaction.message.delete()
                 await interaction.response.send_message("Canceled")
 
