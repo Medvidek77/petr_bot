@@ -99,8 +99,8 @@ async def on_message(message):
             async def send_button(self, button, interaction):
                 button.disabled = True
                 messagesend = await message.channel.send("Sending DMs to all members")
-                await messagesend.delete()
                 await asyncio.sleep(2)
+                await messagesend.delete()
                 await interaction.message.delete()
                 all_members = message.guild.members
                 for member in all_members:
