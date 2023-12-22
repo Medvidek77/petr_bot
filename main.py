@@ -72,8 +72,8 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 async def on_message(message):
     if message.author.bot:
         return
-    elif message.content.startswith("!senddm ") or message.content.startswith("!senddm") or message.content.startswith("!senddm  ") or message.content.startswith("!senddm \n") or message.content.startswith("!senddm \n\n") or message.content.startswith("!senddm \n\n\n") or message.content.startswith("!senddm \n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n\n\n\n\n") or message.content.startswith("!senddm \n\n\n\n\n\n\n\n\n\n") or message.content.startswith("!senddm\n"):
-        text = message.content.split("!senddm ", 1)[1]
+    elif message.content.startswith("!dm ") or message.content.startswith("!dm") or message.content.startswith("!dm  ") or message.content.startswith("!dm \n") or message.content.startswith("!dm \n\n") or message.content.startswith("!dm \n\n\n") or message.content.startswith("!dm \n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm\n"):
+        text = message.content.split("!dm ", 1)[1]
         await message.delete()
 
         class MyView(discord.ui.View): 
