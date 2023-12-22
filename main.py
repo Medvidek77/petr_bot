@@ -13,24 +13,35 @@ async def on_ready():
 async def on_member_join(member):
 
     text1 = f"""
-Hi there {member.mention}! 👋
+Hello {member.mention}! :wave:
 
-I hope you're doing great! I've noticed you recently joined our Discord group.😊
+I noticed that you recently joined our CW Trading group. I hope you find it beneficial.:bar_chart:
+Since you’re only in the free version, information and education are very limited. Members who purchase a membership have access to premium Discord channels, where @CW_Jan and other mentors send daily analyses and predictions for each day.:boom:An essential part of being a profitable trader is knowledge, which we provide in our online course, where you will learn to use:
 
-I'm reaching out to share something exciting with you about our course. It dives deep into key areas like technical analysis, market structure, Fibonacci retracement, and Exocharts.📊 This course is made to boost your trading skills with practical knowledge. Plus, purchasing it grants you exclusive access to coaches' channels, including Jan's expert setups and insights, along with channels dedicated to our wizard strategy.
+> * Fibonacci
+> * Exocharts
+> * Market Structure
+> * Footprints
+> * Volume
+> * Risk Management
+> * and more…
 
-I believe this course, along with our dedicated Discord group, could be the perfect fit for you! 🌟
+Membership includes: :white_tick:
 
-Interested in learning more? Check out the details here:
-* Crypto Wizards: [crypto wizards](https://crypto-wizards.net/)
+* Exocharts Pro license worth 2500 CZK
+* Daily CW team analyses
+* Over 50 lessons of CW Jan strategies
 
-Feel free to reach out to CW_Admin in DMs if you have any questions. 🙌
+Let’s close one trade: :thinking:
 
-Looking forward to hearing from you soon!
+You will get a 5% discount for 6 month membership with the code “SPECTATOR5”, which you can enter when ordering on this page: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators) you can visit our pages: :point_down:
+
+CW-Trading: https://cw-trading.cz/
+Crypto Wizards: https://crypto-wizards.net/
     """
 
     text2 = f"""
-Ahoj @name! :wave:
+Ahoj {member.mention}! :wave:
 
 Všiml jsem si, že jsi se nedávno připojil k naší CW Trading skupině. Doufám, že je pro tebe přínosná.:bar_chart:Protože se nacházíš jen v bezplatné verzi, informace a edukace jsou velice omezené. Členové, kteří si zakoupí členství mají přístup k prémiovým Discord kanálům, kam @CW_Jan a další mentoři denně posílají analýzy a to, co budou každý den obchodovat.:boom:Nezbytnou součástí profitabilního tradera jsou znalosti, které poskytujeme v našem online kurzu, ve kterém se naučíš ovládat:
 
