@@ -100,14 +100,15 @@ async def on_message(message):
                 button.disabled = True
                 messagesend = await message.channel.send("Sending DMs to all members")
                 all_members = message.guild.members
+                await asyncio.sleep(2)
+                await messagesend.delete()
+                await interaction.message.delete()
                 for member in all_members:
                     if member.bot:
                         pass
                     else:
                         await member.send(text)
-                        await asyncio.sleep(2)
-                        await messagesend.delete()
-                        await interaction.message.delete()
+                        
 
             @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger)
             async def cancel_button(self, button, interaction):
