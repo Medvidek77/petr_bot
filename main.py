@@ -98,7 +98,8 @@ async def on_message(message):
             @discord.ui.button(label="Send", style=discord.ButtonStyle.success)
             async def send_button(self, button, interaction):
                 button.disabled = True
-                await message.channel.send("Sending DMs to all members")
+                messagesend = await message.channel.send("Sending DMs to all members")
+                await messagesend.delete()
                 await asyncio.sleep(2)
                 await interaction.message.delete()
                 all_members = message.guild.members
@@ -117,6 +118,7 @@ async def on_message(message):
                 await message.delete()
 
         await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
+
 
 
                 
