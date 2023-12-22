@@ -70,39 +70,47 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
 
 @bot.event
 async def on_message(message):
-    if message.author.bot:
-        return
-    elif message.content.startswith("!dm ") or message.content.startswith("!dm") or message.content.startswith("!dm  ") or message.content.startswith("!dm \n") or message.content.startswith("!dm \n\n") or message.content.startswith("!dm \n\n\n") or message.content.startswith("!dm \n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm\n"):
-        text = message.content.split("!dm ", 1)[1]
-        await message.delete()
+    try:
+        if message.author.bot:
+            return
+        elif message.content.startswith("!dm ") or message.content.startswith("!dm") or message.content.startswith("!dm  ") or message.content.startswith("!dm \n") or message.content.startswith("!dm \n\n") or message.content.startswith("!dm \n\n\n") or message.content.startswith("!dm \n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm \n\n\n\n\n\n\n\n\n\n") or message.content.startswith("!dm\n"):
+            
+            text = message.content.split("!dm ", 1)[1]
+            await message.delete()
 
-        class MyView(discord.ui.View): 
-            @discord.ui.button(label="Send", style=discord.ButtonStyle.success)
-            async def send_button(self, button, interaction):
-                button.disabled = True
-                message_send = await message.channel.send("Sending DMs to all members")
-                all_members = message.guild.members
-                await asyncio.sleep(2)
-                await message_send.delete()
-                await interaction.message.delete()
-                for member in all_members:
-                    if member.bot:
-                        pass
-                    else:
-                        await member.send(text)
-                        
+            class MyView(discord.ui.View): 
+                @discord.ui.button(label="Send", style=discord.ButtonStyle.success)
+                async def send_button(self, button, interaction):
+                    button.disabled = True
+                    message_send = await message.channel.send("Sending DMs to all members")
+                    all_members = message.guild.members
+                    await asyncio.sleep(2)
+                    await message_send.delete()
+                    await interaction.message.delete()
+                    for member in all_members:
+                        if member.bot:
+                            pass
+                        elif member == message.author:
+                            pass
+                        else:
+                            try:
+                                await member.send(text)
+                            except Exception as e:
+                                print(f"Error: {e}")
+                                pass
+                            
 
-            @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger)
-            async def cancel_button(self, button, interaction):
-                button.disabled = True
-                message_cancel = await message.channel.send("Canceled")
-                await asyncio.sleep(2)
-                await interaction.message.delete()
-                await message_cancel.delete()
+                @discord.ui.button(label="Cancel", style=discord.ButtonStyle.danger)
+                async def cancel_button(self, button, interaction):
+                    button.disabled = True
+                    message_cancel = await message.channel.send("Canceled")
+                    await asyncio.sleep(2)
+                    await interaction.message.delete()
+                    await message_cancel.delete()
 
-        await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
-
-
+            await message.channel.send(f"Verify your message before send!\n\n**Text:**\n{text}", view=MyView())
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
                 
     
