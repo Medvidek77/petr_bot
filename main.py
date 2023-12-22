@@ -101,8 +101,8 @@ async def on_message(message):
                     for member in all_members:
                         if member.bot:
                             pass
-                        elif member == message.author:
-                            pass
+                        #elif member == message.author:
+                        #    pass
                         else:
                             try:
                                 await member.send(text)
