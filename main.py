@@ -70,7 +70,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     
     try:
         if member.role.name == "Spectator" and member.role.name == "Wizards plus" or member.role.name == "Wizard": 
-            await asyncio.sleep(1)
+            await asyncio.sleep(345600)
             await member.send(embed=embed)
         else: 
             pass
