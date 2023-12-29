@@ -70,13 +70,14 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     
     try:
         await asyncio.sleep(10)
-        if member.role.name == "SP" and member.role.name != "Wizards plus" and member.role.name != "Wizard": 
+        if "SP" in [role.name for role in member.roles]: 
             await asyncio.sleep(10)
             await member.send(embed=embed)
         else: 
             pass
     except Exception as e:
         print(f"Error: {e}")
+
 
 
 
