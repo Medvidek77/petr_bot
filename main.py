@@ -70,7 +70,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     
     try:
         await asyncio.sleep(103680)
-        if "SP" in [role.name for role in member.roles]: 
+        if "Spectator" in [role.name for role in member.roles]: 
             await asyncio.sleep(10)
             await member.send(embed=embed)
         else: 
