@@ -18,13 +18,13 @@ Hello {member.mention}! :wave:
 I noticed that you recently joined our CW Trading group. I hope you find it beneficial.:bar_chart:
 Since you’re only in the free version, information and education are very limited. Members who purchase a membership have access to premium Discord channels, where @CW_Jan and other mentors send daily analyses and predictions for each day.:boom:An essential part of being a profitable trader is knowledge, which we provide in our online course, where you will learn to use:
 
-> * Fibonacci
-> * Exocharts
-> * Market Structure
-> * Footprints
-> * Volume
-> * Risk Management
-> * and more…
+* **Fibonacci**
+* **Exocharts**
+* **Market Structure**
+* **Footprints**
+* **Volume**
+* **Risk Management**
+* **and more…**
 
 **Membership includes: :white_check_mark:**
 * Exocharts Pro license worth 2500 CZK
