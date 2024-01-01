@@ -31,8 +31,7 @@ Since you’re only in the free version, information and education are very limi
 * Daily CW team analyses
 * Over 50 lessons of CW Jan strategies
 
-Let’s close one trade: :thinking:
-
+**Let’s close one trade: :thinking:**
 You will get a 5% discount for 6 month membership with the code “SPECTATOR5”, which you can enter when ordering on this page: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators).
 
 **You can visit our pages: :point_down:**
@@ -58,7 +57,7 @@ Všiml jsem si, že jsi se nedávno připojil k naší CW Trading skupině. Douf
 * Denní analýzy CW týmu
 * Přes 50 lekcí strategií CW Jana
 
-Pojďme uzavřít jeden trade: :thinking:
+**Pojďme uzavřít jeden trade: :thinking:**
 Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při objednávce na této stránce: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators)
 
 **Můžeš navštívit naše stránky: :point_down:**
