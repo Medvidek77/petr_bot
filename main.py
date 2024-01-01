@@ -69,8 +69,7 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
     embed.set_image(url="https://cdn.discordapp.com/attachments/1180556010465800225/1184133248440356934/cw_logo_kopie.png?ex=658add06&is=65786806&hm=bcf39cc82e93e6c9ef519494b7ac83d850a9ed715d76605109844e860d69109a&")
     
     try:
-        for _ in range(288):
-            await asyncio.sleep(320)
+        asyncio.sleep(10)
         if "SP" in [role.name for role in member.roles]: 
             await asyncio.sleep(10)
             await member.send(embed=embed)
