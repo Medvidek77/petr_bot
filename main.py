@@ -36,8 +36,8 @@ Let’s close one trade: :thinking:
 You will get a 5% discount for 6 month membership with the code “SPECTATOR5”, which you can enter when ordering on this page: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators).
 
 **You can visit our pages: :point_down:**
-CW-Trading: https://cw-trading.cz/
-Crypto Wizards: https://crypto-wizards.net/
+* CW-Trading: https://cw-trading.cz/
+* Crypto Wizards: https://crypto-wizards.net/
     """
 
     text2 = f"""
