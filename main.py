@@ -45,13 +45,13 @@ Ahoj {member.mention}! :wave:
 
 Všiml jsem si, že jsi se nedávno připojil k naší CW Trading skupině. Doufám, že je pro tebe přínosná.:bar_chart:Protože se nacházíš jen v bezplatné verzi, informace a edukace jsou velice omezené. Členové, kteří si zakoupí členství mají přístup k prémiovým Discord kanálům, kam @CW_Jan a další mentoři denně posílají analýzy a to, co budou každý den obchodovat.:boom:Nezbytnou součástí profitabilního tradera jsou znalosti, které poskytujeme v našem online kurzu, ve kterém se naučíš ovládat:
 
-> * Fibonacci
-> * Exocharts
-> * Market Structure
-> * Footprints
-> * Volume
-> * Risk Management
-> * a další…
+* **Fibonacci**
+* **Exocharts**
+* **Market Structure**
+* **Footprints**
+* **Volume**
+* **Risk Management**
+* **a další…**
 
 **Součástí členství je: :white_check_mark:**
 * Exocharts Pro licence v hodnotě 2500 ,- Kč
