@@ -61,8 +61,9 @@ Součástí členství je: :white_check_mark:
 * Přes 50 lekcí strategií CW Jana
 
 Pojďme uzavřít jeden trade: :thinking:
-Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při objednávce na této stránce: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators) můžeš navštívit naše stránky: :point_down:
+Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při objednávce na této stránce: [link](https://cw-trading.cz/?utm_source=discord&utm_medium=discountcodespectators)
 
+**Můžeš navštívit naše stránky: :point_down:**
 * CW-Trading: https://cw-trading.cz/
 * Crypto Wizards: https://crypto-wizards.net/
     """
