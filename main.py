@@ -26,8 +26,7 @@ Since you’re only in the free version, information and education are very limi
 > * Risk Management
 > * and more…
 
-Membership includes: :white_check_mark:
-
+**Membership includes: :white_check_mark:**
 * Exocharts Pro license worth 2500 CZK
 * Daily CW team analyses
 * Over 50 lessons of CW Jan strategies
@@ -54,8 +53,7 @@ Všiml jsem si, že jsi se nedávno připojil k naší CW Trading skupině. Douf
 > * Risk Management
 > * a další…
 
-Součástí členství je: :white_check_mark:
-
+**Součástí členství je: :white_check_mark:**
 * Exocharts Pro licence v hodnotě 2500 ,- Kč
 * Denní analýzy CW týmu
 * Přes 50 lekcí strategií CW Jana
