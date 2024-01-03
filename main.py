@@ -77,8 +77,6 @@ Dostaneš 5% slevu na kurz s kódem “SPECTATOR5”, který můžeš zadat při
         print(f"Error: {e}")
 
 
-# 1177613374155137027
-
 @bot.event
 async def on_message(message):
     try:
